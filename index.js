@@ -1,17 +1,13 @@
-const food = [{
-        name: "burger",
-        price: 8300,
-    }, {
-        name: "pizza",
-        price: 3200,
-    },
-    {
-        name: "hotdog",
-        price: 4500,
-    }
-];
-
-const ul = document.querySelector("#list");
-food.forEach(product => {
-    ul.innerHTML += `<ul>${product.name} - ${product.price}</ul>\n `
+const homeworks = ["Lavar la loza", "Leer un libro", "Tomar Agua", "Dar Gracias", "Estudiar Programación"];
+const hw = document.querySelector(".checkbox");
+homeworks.forEach(work => {
+    hw.innerHTML += `<ul><label><input type="checkbox" > ${work.toUpperCase()}</label><ul>`
 })
+
+const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const ul = document.querySelector("#day-lis");
+const dayUpper = days.map(day => {
+    ul.innerHTML += `<ul><label><input type="checkbox"> ${day.toUpperCase()}</label></ul>`
+
+
+});
