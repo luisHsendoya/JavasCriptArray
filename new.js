@@ -50,6 +50,6 @@ console.log("-------------------")
 console.log(object2);
 
 object1.forEach(element => {
-    ()
+    console.log(element.cost);
 
 });
