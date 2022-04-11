@@ -14,6 +14,7 @@ const object1 = [{
         income: 34000,
         working: true,
 
+
     },
     {
         name: "piedad",
